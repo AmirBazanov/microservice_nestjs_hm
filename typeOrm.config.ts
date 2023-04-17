@@ -4,7 +4,7 @@ import { config } from 'dotenv';
 import { User } from './libs/postgres-typeorm/entities/user.entity';
 import { Profile } from './libs/postgres-typeorm/entities/profile.entity';
 import { Role } from './libs/postgres-typeorm/entities/role.entity';
-import { $npmConfigName1681412069951 } from './migrations/1681412069951-$npm_config_name';
+import { Microservices1681484571326 } from './migrations/1681484571326-microservices';
 
 config();
 
@@ -18,5 +18,5 @@ export default new DataSource({
   password: configService.get('POSTGRES_PASSWORD'),
   database: configService.get('POSTGRES_DB'),
   entities: [User, Profile, Role],
-  migrations: [$npmConfigName1681412069951],
+  migrations: [Microservices1681484571326],
 });

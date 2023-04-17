@@ -25,9 +25,11 @@
         "libs/rabbitmq-config/src/*"
       ],
       "@app/jwt": [
+        "libs/jwt/src",
         "libs/jwt/src"
       ],
       "@app/jwt/*": [
+        "libs/jwt/src/*",
         "libs/jwt/src/*"
       ],
       "@app/postgres-typeorm": [
@@ -37,6 +39,24 @@
       "@app/postgres-typeorm/*": [
         "libs/postgres-typeorm/src/*",
         "libs/postgres-typeorm/src/*"
+      ],
+      "@app/users": [
+        "libs/users/src"
+      ],
+      "@app/users/*": [
+        "libs/users/src/*"
+      ],
+      "@app/prisma": [
+        "libs/prisma/src"
+      ],
+      "@app/prisma/*": [
+        "libs/prisma/src/*"
+      ],
+      "@app/roles": [
+        "libs/roles/src"
+      ],
+      "@app/roles/*": [
+        "libs/roles/src/*"
       ]
     }
   }

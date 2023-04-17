@@ -37,15 +37,6 @@
         "tsConfigPath": "apps/auth/tsconfig.app.json"
       }
     },
-    "users": {
-      "type": "application",
-      "root": "apps/users",
-      "entryFile": "main",
-      "sourceRoot": "apps/users/src",
-      "compilerOptions": {
-        "tsConfigPath": "apps/users/tsconfig.app.json"
-      }
-    },
     "profiles": {
       "type": "application",
       "root": "apps/profiles",
@@ -55,13 +46,22 @@
         "tsConfigPath": "apps/profiles/tsconfig.app.json"
       }
     },
-    "postgres-typeorm": {
+    "users": {
       "type": "library",
-      "root": "libs/postgres-typeorm",
+      "root": "libs/users",
       "entryFile": "index",
-      "sourceRoot": "libs/postgres-typeorm/src",
+      "sourceRoot": "libs/users/src",
       "compilerOptions": {
-        "tsConfigPath": "libs/postgres-typeorm/tsconfig.lib.json"
+        "tsConfigPath": "libs/users/tsconfig.lib.json"
+      }
+    },
+    "roles": {
+      "type": "library",
+      "root": "libs/roles",
+      "entryFile": "index",
+      "sourceRoot": "libs/roles/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/roles/tsconfig.lib.json"
       }
     }
   }
